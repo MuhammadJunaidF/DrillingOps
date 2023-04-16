@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DrillingOps.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:PlanningPortal.WebApi.Extensions.ServiceExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PlanningPortal.WebApi.Extensions.ServiceExtensions.AddSwaggerExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PlanningPortal.WebApi.Extensions.ServiceExtensions.AddApiVersioningExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:PlanningPortal.WebApi.Filters.RolesAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PlanningPortal.WebApi.Filters.RolesAttribute.#ctor(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="roles"></param>
+        </member>
+        <member name="T:PlanningPortal.WebApi.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PlanningPortal.WebApi.Program.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PlanningPortal.WebApi.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PlanningPortal.WebApi.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
