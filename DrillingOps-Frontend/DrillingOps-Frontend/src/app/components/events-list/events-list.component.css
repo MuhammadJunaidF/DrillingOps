@@ -1,0 +1,15 @@
+.add-btn{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+table tbody tr td.menu,
+.table tbody tr td.menu {
+  padding: 0 0.75rem;
+}
+
+table tbody tr td.menu .dropdown a i,
+.table tbody tr td.menu .dropdown a i {
+  color:  hsl(0, 0%, 74%);
+  font-size: calc(0.84375rem * 1.25);
+}

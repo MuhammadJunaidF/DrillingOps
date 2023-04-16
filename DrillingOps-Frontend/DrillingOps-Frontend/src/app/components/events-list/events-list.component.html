@@ -1,0 +1,94 @@
+<div class="sub-header sticky">
+    <!-- <div class="page-header">
+        <div class="page-title">Events</div>
+        <div class="page-subtitle">A quick overview of all the drilling events</div>
+
+    </div> -->
+
+    <div class="options add-btn">
+        <button class="btn btn-primary" (click)="showDialog(null)">
+            <i class="far fa-circle-plus"></i> Add Event </button>
+    </div>
+    &nbsp;
+</div>
+<section>
+    <div class="card card-table">
+
+        <div class="card-header">
+        </div>
+
+        <div class="card-block position-relative">
+            <table class="table simple">
+                <thead>
+                    <tr>
+                        <th data-type="user" data-priority="1">
+                            <div>
+                                <span>Event
+                                </span>
+
+                            </div>
+
+                        </th>
+
+                        <th data-type="badge" class="text-left" data-priority="1">
+                            <div>
+                                <span>
+                                    Start
+                                </span>
+                            </div>
+                        </th>
+
+                        <th data-type="badge" class="text-left" data-priority="1">
+                            <div>
+                                <span>
+                                    End
+                                </span>
+                            </div>
+                        </th>
+
+                        <th data-type="action" class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let event of eventList.items">
+                        <td data-type="user">
+                            {{ event.eventName }}
+                        </td>
+
+                        <td data-type="badge">
+                            {{ event.start }}
+                        </td>
+
+                        <td data-type="badge">
+                            {{ event.end }}
+                        </td>
+
+                        <td class="menu text-center" data-type="action">
+                            <button type="button" class="btn btn-primary btn-sm mt-1" (click)="showDialog(event)">Edit</button>&nbsp;
+                            <button type="button" class="btn btn-danger btn-sm mt-1" (click)="deleteEvent(event)">Delete</button>
+
+
+                            <!-- <a (click)="showDialog(event.id)"><i class="fa fa-edit"></i></a>
+                            <a href="javascript:" (click)="deleteEvent(event)"><i
+                                    class="fa fa-edit"></i></a> -->
+
+                        </td>
+                    </tr>
+
+                </tbody>
+
+
+                <div class="empty-state for-grid" *ngIf="!eventList || eventList.length == 0">
+                    <span class="illustration large">
+                        <svg>
+                            <use xlink:href="assets/img/cubivue-icons.svg#empty-state"></use>
+                        </svg>
+                    </span>
+                    <p>No events found!</p>
+                </div>
+
+            </table>
+        </div>
+
+    </div>
+</section>
