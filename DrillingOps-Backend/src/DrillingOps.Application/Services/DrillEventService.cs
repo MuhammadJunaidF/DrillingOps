@@ -134,7 +134,7 @@ public class DrillEventService : IDrillEventService
             {
                 Label = e.Event.Name,
                 Stack = "a",
-                Data = new List<long>() { e.End - e.Start },
+                Data = new List<long>() { e.End },
                 BackgroundColor = new List<string>() { e.Event.Color == null ? "" : e.Event.Color }
 
             }).ToListAsync();
